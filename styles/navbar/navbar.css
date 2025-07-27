@@ -1,5 +1,6 @@
 .logo{
     color: white;
+    font-size: 35px;
 }
 
 .container-links{
@@ -11,5 +12,5 @@
     font-size: 18px;
     font-family: Neo;
     text-decoration: none;
-    color: #1b1b1b;
+    color: white;
 }

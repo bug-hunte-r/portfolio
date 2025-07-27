@@ -1,8 +1,12 @@
 /* 603F26 */
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
-    background: #603F26;
-    background: linear-gradient(90deg, rgba(96, 63, 38, 1) 31%, rgba(255, 255, 255, 1) 31%);
+    background: #7C00FE;
+    background: linear-gradient(90deg,rgba(124, 0, 254, 1) 0%, rgba(0, 0, 0, 1) 35%);
 }
 
 .container {
