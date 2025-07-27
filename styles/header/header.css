@@ -1,11 +1,13 @@
 .conatiner-header {
-    position: relative;
-    bottom: 500px;
-    width: 50vw;
+    width: 650px;
     height: 400px;
     backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.158);
+    margin-top: -505px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .my-name {
@@ -21,6 +23,7 @@
     align-items: center;
     gap: 15px;
     justify-content: center;
+    width: 100%;
 }
 
 .my-tech {

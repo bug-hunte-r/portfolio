@@ -1,0 +1,13 @@
+@media only screen and (max-width: 690px) {
+    .conatiner-header {
+        width: 600px;
+    }
+
+    .my-name {
+        font-size: 40px;
+    }
+
+    .my-tech {
+        font-size: 37px;
+    }
+}
