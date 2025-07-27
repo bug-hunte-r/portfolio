@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .my-name {
@@ -16,6 +17,7 @@
     text-align: center;
     letter-spacing: 2px;
     font-size: 45px;
+    margin-top: 0;
 }
 
 .container-tech {
@@ -32,13 +34,13 @@
     letter-spacing: 2px;
     font-size: 40px;
     color: #6F61C0;
+    margin-top: -27px;
 }
 
 .container-btns-header {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 50px;
 }
 
 .btn-hire {
