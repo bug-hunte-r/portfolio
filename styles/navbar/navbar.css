@@ -1,11 +1,14 @@
 .logo{
     color: white;
     font-size: 35px;
+    cursor: pointer;
+    margin-top: 0;
 }
 
 .container-links{
     display: flex;
-    gap: 30px;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .nav-links{
@@ -13,4 +16,9 @@
     font-family: Neo;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+
+.nav-links:hover{
+    transform: translateY(-5px);
 }

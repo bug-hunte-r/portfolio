@@ -1,5 +1,6 @@
 import style from './global.css'
 import Orb from '../anim/Orb';
+import Header from '@/components/templates/Header';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           forceHoverState={false}
         />
       </div>
+      <Header />
     </div>
   );
 }

@@ -65,6 +65,22 @@ function Navbar() {
                 </Link>
                 <Link href={'/'}>
                     <SplitText
+                        text="Skills"
+                        className="text-2xl font-semibold text-center nav-links"
+                        delay={200}
+                        duration={0.9}
+                        ease="power3.out"
+                        splitType="chars"
+                        from={{ opacity: 0, y: 40 }}
+                        to={{ opacity: 1, y: 0 }}
+                        threshold={0.1}
+                        rootMargin="-100px"
+                        textAlign="center"
+                        onLetterAnimationComplete={handleAnimationComplete}
+                    />
+                </Link>
+                <Link href={'/'}>
+                    <SplitText
                         text="Projects"
                         className="text-2xl font-semibold text-center nav-links"
                         delay={200}

@@ -1,4 +1,3 @@
-import Bottombar from '@/components/templates/Bottombar';
 import Navbar from '@/components/templates/Navbar';
 import localFont from 'next/font/local'
  
@@ -32,7 +31,6 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
-        <Bottombar />
       </body>
     </html>
   );
