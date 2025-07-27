@@ -1,5 +1,6 @@
 import React from 'react'
-import navbar from '../../styles/navbar.css'
+import navbar from '../../styles/navbar/navbar.css'
+import mediaNavbar from '../../styles/navbar/mediaNavbar.css'
 import Link from 'next/link'
 
 function Navbar() {
