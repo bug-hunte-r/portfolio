@@ -1,0 +1,15 @@
+.logo{
+    color: white;
+}
+
+.container-links{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links{
+    font-size: 18px;
+    font-family: Neo;
+    text-decoration: none;
+    color: #1b1b1b;
+}
