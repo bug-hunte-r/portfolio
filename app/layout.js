@@ -1,3 +1,4 @@
+import Navbar from '@/components/templates/Navbar';
 import localFont from 'next/font/local'
  
 const Neo = localFont({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={` ${Riv.className} ${Neo.className}`}>
       <body>
+        <Navbar />
         {children}
       </body>
     </html>
