@@ -1,0 +1,18 @@
+/* 603F26 */
+
+body {
+    background: #603F26;
+    background: linear-gradient(90deg, rgba(96, 63, 38, 1) 31%, rgba(255, 255, 255, 1) 31%);
+}
+
+.container {
+    width: 95vw;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.h1Riv {
+    font-family: Riv;
+    color: white;
+}
