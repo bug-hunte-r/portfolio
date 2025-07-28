@@ -6,6 +6,7 @@ import TextType from '../../anim/TextType';
 import SplitText from '@/anim/SplitText';
 import FadeContent from '../../anim/FadeContent'
 
+
 function Header() {
   return (
     <div className='container'>

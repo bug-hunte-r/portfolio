@@ -1,6 +1,7 @@
 import Navbar from '@/components/templates/Navbar';
+import { connect } from 'mongoose';
 import localFont from 'next/font/local'
- 
+
 const Neo = localFont({
   src: [
     {
@@ -24,6 +25,7 @@ const Neo = localFont({
 const Riv = localFont({
   src: '../public/fonts/Riviera.otf',
 })
+
 
 export default function RootLayout({ children }) {
   return (

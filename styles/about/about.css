@@ -1,0 +1,10 @@
+.img-iran{
+    width: 500px;
+    height: 500px;
+}
+
+.img-procces{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

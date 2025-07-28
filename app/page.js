@@ -1,6 +1,7 @@
 import style from './global.css'
 import Orb from '../anim/Orb';
 import Header from '@/components/templates/Header';
+import About from '@/components/templates/About';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         />
       </div>
       <Header />
+      <About />
     </div>
   );
 }
