@@ -68,6 +68,11 @@
         width: 400px;
         height: 400px;
     }
+
+    .my-name-about{
+        display: flex;
+        align-self: center;
+    }
 }
 
 @media only screen and (max-width: 430px) {

@@ -12,11 +12,20 @@ function Header() {
     <div className='container'>
       <div className='conatiner-header'>
 
-        <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
-          <h1 className='my-name'>I`m Shayan Jafarnejad</h1>
-        </FadeContent>
+        <SplitText
+          text="I`m Shayan Jafarnejad"
+          className="text-2xl font-semibold text-center my-name"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
 
-        <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
           <div className='container-tech'>
             <h1 className='my-name'>I`m</h1>
             <TextType
@@ -30,7 +39,6 @@ function Header() {
             />
             <h1 className='my-name'>Developer</h1>
           </div>
-        </FadeContent>
 
         <div className='container-btns-header'>
           <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>

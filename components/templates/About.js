@@ -3,17 +3,34 @@ import React from 'react'
 import about from '../../styles/about/about.css'
 import media from '../../styles/about/mediaAbout.css'
 import { FaCircle } from "react-icons/fa6";
+import TextPressure from '../../anim/TextPressure';
+import SplitText from '@/anim/SplitText';
 
 function About() {
   return (
     <div className='container'>
 
-      <h1 className='title-about'>About</h1>
+      <div style={{ position: 'absolute', height: '300px' }}>
+        <TextPressure
+          text="About"
+          flex={true}
+          alpha={false}
+          stroke={false}
+          width={true}
+          weight={false}
+          italic={false}
+          textColor="#ffff"
+          strokeColor="#6F61C0"
+          minFontSize={70}
+          
+        />
+      </div>
 
       <Image src={'/images/iran.png'} width={1000} height={1000} alt='iran' className='img-iran' />
 
       <div className='container-about'>
         <h2 className='my-name-about'>I`m Shayan Jafarnejad</h2>
+        
         <div className='container-texts'>
           <p className='texts-about'><FaCircle className='circles-about' />I was born in Iran-Kurdistan</p>
           <p className='texts-about'><FaCircle className='circles-about' />I`m 17 years old</p>
