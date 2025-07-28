@@ -21,12 +21,12 @@ function Header() {
             <h1 className='my-name'>I`m</h1>
             <TextType
               text={["Frontend", "Backend"]}
-              typingSpeed={100}
-              pauseDuration={1000}
+              typingSpeed={50}
+              pauseDuration={1800}
               showCursor={false}
               textColors={'#6F61C0'}
               className='my-tech'
-              deletingSpeed={100}
+              deletingSpeed={50}
             />
             <h1 className='my-name'>Developer</h1>
           </div>
