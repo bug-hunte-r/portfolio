@@ -1,6 +1,6 @@
 .conatiner-header {
     width: 55vw;
-    height: 350px;
+    height: 300px;
     backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.158);
@@ -16,7 +16,7 @@
     font-family: Neo;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 45px;
+    font-size: calc(7px + 3vw);
     margin-top: 0;
 }
 
@@ -32,7 +32,7 @@
     font-family: Neo;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: calc(0.1px + 3vw);
     color: #6F61C0;
     margin-top: -27px;
 }

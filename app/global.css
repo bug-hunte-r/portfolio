@@ -9,6 +9,7 @@ body {
     /* background: #7C00FE;
     background: linear-gradient(90deg,rgba(124, 0, 254, 1) 0%, rgba(0, 0, 0, 1) 35%); */
     background-color: black;
+    overflow-x: hidden;
 }
 
 .container {

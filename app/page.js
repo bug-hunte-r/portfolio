@@ -6,7 +6,7 @@ import About from '@/components/templates/About';
 export default function Home() {
   return (
     <div className='container'>
-      <div style={{ width: '80vw', height: '600px', position: 'relative' }}>
+      <div style={{ width: '100vw', height: '600px', position: 'relative' }}>
         <Orb
           hoverIntensity={0.5}
           rotateOnHover={true}
