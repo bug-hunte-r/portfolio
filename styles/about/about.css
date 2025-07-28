@@ -1,5 +1,5 @@
 .container-about {
-    width: 610px;
+    width: 52vw;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
     color: white;
     font-family: Neo;
     margin-top: 0;
-    font-size: 15px;
+    font-size: calc(3px + 1vw);
     display: flex;
     gap: 10px;
 }

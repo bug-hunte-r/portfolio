@@ -27,7 +27,7 @@ function Header() {
         />
 
           <div className='container-tech'>
-            <h1 className='my-name'>I`m</h1>
+            <h1 className='me'>I`m</h1>
             <TextType
               text={["Frontend", "Backend"]}
               typingSpeed={50}
@@ -37,7 +37,7 @@ function Header() {
               className='my-tech'
               deletingSpeed={50}
             />
-            <h1 className='my-name'>Developer</h1>
+            <h1 className='me'>Developer</h1>
           </div>
 
         <div className='container-btns-header'>
