@@ -1,3 +1,32 @@
+@media only screen and (min-width: 1800px) {
+
+    .conatiner-header {
+        height: 330px;
+    }
+
+    .my-tech {
+        font-size: 55px;
+        margin-top: -28px;
+    }
+
+    .me {
+        font-size: 55px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .btn-hire {
+        width: 180px;
+        font-size: 22px;
+    }
+
+    .btn-get-resume {
+        width: 180px;
+        font-size: 22px;
+    }
+}
+
 @media only screen and (max-width: 690px) {
     .conatiner-header {
         width: 600px;
@@ -39,7 +68,7 @@
     .conatiner-header {
         width: 500px;
         height: 260px;
-        margin-top: -435px;
+        margin-top: -450px;
     }
 
     .my-name {
@@ -80,7 +109,7 @@
     .conatiner-header {
         width: 400px;
         height: 230px;
-        margin-top: -425px;
+        margin-top: -435px;
     }
 
     .my-name {
@@ -89,7 +118,6 @@
 
     .my-tech {
         font-size: 23px;
-        margin-top: -15px;
     }
 
     .me {
@@ -108,7 +136,7 @@
 @media only screen and (max-width: 430px) {
     .conatiner-header {
         width: 350px;
-        height: 200px;
+        height: 180px;
         margin-top: -410px;
     }
 
@@ -118,7 +146,6 @@
 
     .my-tech {
         font-size: 17px;
-        margin-top: -10px;
     }
 
     .me {
@@ -139,7 +166,7 @@
 @media only screen and (max-width: 380px) {
     .conatiner-header {
         width: 300px;
-        height: 190px;
+        height: 160px;
         margin-top: -405px;
     }
 
@@ -157,7 +184,7 @@
 @media only screen and (max-width: 320px) {
     .conatiner-header {
         width: 270px;
-        height: 200px;
+        height: 120px;
         margin-top: -385px;
     }
 
@@ -171,7 +198,6 @@
 
     .my-tech {
         font-size: 12px;
-        margin-top: -10px;
     }
 
     .btn-hire {

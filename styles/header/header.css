@@ -1,16 +1,15 @@
 .conatiner-header {
-    width: 52vw;
-    height: 300px;
+    width: 60%;
+    height: 330px;
     backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.158);
-    margin-top: -460px;
+    margin-top: -490px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 20px 0px;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
 }
 
 .my-name {
@@ -36,7 +35,6 @@
     letter-spacing: 2px;
     font-size: calc(0.1px + 3vw);
     color: #6F61C0;
-    margin-top: -20px;
 }
 
 .me {
@@ -45,7 +43,6 @@
     letter-spacing: 2px;
     font-size: calc(0.1px + 3vw);
     color: white;
-    margin-top: 0;
 }
 
 .container-btns-header {
