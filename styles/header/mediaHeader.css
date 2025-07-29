@@ -31,7 +31,7 @@
         width: 180px;
         font-size: 22px;
     }
-    
+
     .btn-get-resume {
         width: 180px;
         font-size: 22px;
@@ -50,9 +50,10 @@
     }
 }
 
-@media only screen and (min-width: 1630px) {
+@media only screen and (min-width: 1600px) {
     .conatiner-header {
         height: 310px;
+        width: 55%;
     }
 }
 
@@ -64,7 +65,7 @@
 }
 
 @media only screen and (min-width: 1800px) {
-    
+
     .conatiner-header {
         height: 330px;
         margin-top: -490px;
@@ -78,6 +79,25 @@
     .me {
         font-size: 55px;
         margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 2090px) {
+    .btn-hire {
+        width: 200px;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .btn-get-resume {
+        width: 200px;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .conatiner-header {
+        height: 360px;
+        margin-top: -500px;
     }
 }
 
@@ -256,13 +276,15 @@
     }
 
     .btn-hire {
-        width: 100px;
-        font-size: 12px;
+        width: 95px;
+        font-size: 11px;
+        height: 30px;
     }
 
     .btn-get-resume {
-        width: 100px;
-        font-size: 12px;
+        width: 95px;
+        font-size: 11px;
+        height: 30px;
     }
 
     .container-btns-header {

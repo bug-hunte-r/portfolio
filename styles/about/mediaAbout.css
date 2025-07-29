@@ -9,6 +9,10 @@
     .container-about {
         height: 200px;
     }
+
+    .title-about{
+        font-size: 55px;
+    }
 }
 
 @media only screen and (min-width: 1460px) {
@@ -33,6 +37,10 @@
 @media only screen and (min-width: 1860px) {
     .container-about {
         padding: 30px
+    }
+
+    .title-about{
+        font-size: 60px;
     }
 }
 
@@ -117,9 +125,6 @@
         height: 450px;
     }
 
-    .title-about {
-        font-size: calc(10px + 6vw);
-    }
 }
 
 

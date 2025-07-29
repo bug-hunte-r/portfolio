@@ -1,0 +1,29 @@
+.container-number{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.number-text{
+    color: white;
+    font-family: Neo;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+}
+
+.number{
+    color: #6F61C0;
+    font-family: Neo;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+}
+
+.numbers-conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
