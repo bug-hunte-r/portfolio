@@ -1,7 +1,73 @@
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 690px) {
+    .conatiner-header {
+        height: 200px;
+        margin-top: -420px;
+    }
+}
 
+@media only screen and (min-width: 900px) {
+    .conatiner-header {
+        height: 240px;
+        margin-top: -440px;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+    .conatiner-header {
+        height: 260px;
+        margin-top: -460px;
+    }
+}
+
+@media only screen and (min-width: 1275px) {
+    .conatiner-header {
+        height: 280px;
+        margin-top: -470px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .btn-hire {
+        width: 180px;
+        font-size: 22px;
+    }
+    
+    .btn-get-resume {
+        width: 180px;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1430px) {
+    .conatiner-header {
+        height: 290px;
+    }
+}
+
+@media only screen and (min-width: 1530px) {
+    .conatiner-header {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1630px) {
+    .conatiner-header {
+        height: 310px;
+    }
+}
+
+@media only screen and (min-width: 1730px) {
+    .conatiner-header {
+        height: 320px;
+        margin-top: -480px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    
     .conatiner-header {
         height: 330px;
+        margin-top: -490px;
     }
 
     .my-tech {
@@ -15,17 +81,6 @@
     }
 }
 
-@media only screen and (min-width: 1400px) {
-    .btn-hire {
-        width: 180px;
-        font-size: 22px;
-    }
-
-    .btn-get-resume {
-        width: 180px;
-        font-size: 22px;
-    }
-}
 
 @media only screen and (max-width: 690px) {
     .conatiner-header {
