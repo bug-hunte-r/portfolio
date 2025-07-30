@@ -6,43 +6,121 @@ import { FaJsSquare } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-
-
-
-
+import AnimatedContent from '@/anim/AnimatedContent';
 
 function CardTech() {
     return (
         <>
-            <div className='container-cards'>
-                <FaHtml5 className='img-card-skill html' size={70} />
-                <h2 className='title-card-skill'>HTML</h2>
-            </div>
 
-            <div className='container-cards'>
-                <FaCss3Alt className='img-card-skill css' size={70} />
-                <h2 className='title-card-skill'>CSS</h2>
-            </div>
+            <AnimatedContent
+                distance={1}
+                direction="horizontal"
+                reverse={false}
+                duration={1}
+                ease="bounce.out"
+                initialOpacity={2}
+                animateOpacity
+                scale={0}
+                threshold={0}
+                delay={0.1}
+            >
+                <div className='container-cards'>
+                    <FaHtml5 className='img-card-skill html' size={70} />
+                    <h2 className='title-card-skill'>HTML</h2>
+                </div>
+            </AnimatedContent>
 
-            <div className='container-cards'>
-                <FaJsSquare className='img-card-skill js' size={70} />
-                <h2 className='title-card-skill'>JAVASCRIPT</h2>
-            </div>
+            <AnimatedContent
+                distance={1}
+                direction="horizontal"
+                reverse={false}
+                duration={1}
+                ease="bounce.out"
+                initialOpacity={2}
+                animateOpacity
+                scale={0}
+                threshold={0}
+                delay={0.1}
+            >
+                <div className='container-cards'>
+                    <FaCss3Alt className='img-card-skill css' size={70} />
+                    <h2 className='title-card-skill'>CSS</h2>
+                </div>
+            </AnimatedContent>
 
-            <div className='container-cards'>
-                <RiReactjsLine className='img-card-skill react' size={70} />
-                <h2 className='title-card-skill'>REACT</h2>
-            </div>
+            <AnimatedContent
+                distance={1}
+                direction="horizontal"
+                reverse={false}
+                duration={1}
+                ease="bounce.out"
+                initialOpacity={2}
+                animateOpacity
+                scale={0}
+                threshold={0}
+                delay={0.1}
+            >
+                <div className='container-cards'>
+                    <FaJsSquare className='img-card-skill js' size={70} />
+                    <h2 className='title-card-skill'>JAVASCRIPT</h2>
+                </div>
+            </AnimatedContent>
 
-            <div className='container-cards'>
-                <SiNextdotjs className='img-card-skill next' size={70} />
-                <h2 className='title-card-skill'>NEXT</h2>
-            </div>
 
-            <div className='container-cards'>
-                <RiTailwindCssFill className='img-card-skill tailwind' size={70} />
-                <h2 className='title-card-skill'>TAILWIND</h2>
-            </div>
+            <AnimatedContent
+                distance={1}
+                direction="horizontal"
+                reverse={false}
+                duration={1}
+                ease="bounce.out"
+                initialOpacity={2}
+                animateOpacity
+                scale={0}
+                threshold={0}
+                delay={0.1}
+            >
+                <div className='container-cards'>
+                    <RiReactjsLine className='img-card-skill react' size={70} />
+                    <h2 className='title-card-skill'>REACT</h2>
+                </div>
+            </AnimatedContent>
+
+            <AnimatedContent
+                distance={1}
+                direction="horizontal"
+                reverse={false}
+                duration={1}
+                ease="bounce.out"
+                initialOpacity={2}
+                animateOpacity
+                scale={0}
+                threshold={0}
+                delay={0.1}
+            >
+                <div className='container-cards'>
+                    <SiNextdotjs className='img-card-skill next' size={70} />
+                    <h2 className='title-card-skill'>NEXT</h2>
+                </div>
+            </AnimatedContent>
+
+            <AnimatedContent
+                distance={1}
+                direction="horizontal"
+                reverse={false}
+                duration={1}
+                ease="bounce.out"
+                initialOpacity={2}
+                animateOpacity
+                scale={0}
+                threshold={0}
+                delay={0.1}
+            >
+                <div className='container-cards'>
+                    <RiTailwindCssFill className='img-card-skill tailwind' size={70} />
+                    <h2 className='title-card-skill'>TAILWIND</h2>
+                </div>
+            </AnimatedContent>
+
         </>
     )
 }
