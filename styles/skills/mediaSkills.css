@@ -1,0 +1,17 @@
+@media only screen and (max-width: 840px) {
+    .container-cards-in-skill-page{
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .container-cards-in-skill-page{
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .container-cards-in-skill-page{
+        grid-template-columns: repeat(1, 250px);
+    }
+}

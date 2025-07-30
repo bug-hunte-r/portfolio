@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1460px) {
+
+    .container-cards{
+        padding-top: 25px;
+    }
+
+    .title-card-skill{
+        font-size: calc(1px + 2vw);
+    }
+    
+    .img-card-skill{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+
+    .container-cards{
+        padding-top: 33px;
+    }
+
+    .img-card-skill{
+        width: 120px;
+        height: 120px;
+    }
+}

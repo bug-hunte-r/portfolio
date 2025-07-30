@@ -24,6 +24,7 @@
 @media only screen and (min-width: 1500px) {
     .container-about {
         height: 230px;
+        margin-top: 350px;
     }
 }
 
@@ -44,6 +45,12 @@
     }
 }
 
+@media only screen and (min-width: 1900px) {
+    .container-about {
+        margin-top: 370px;
+    }
+}
+
 @media only screen and (min-width: 2000px) {
     .texts-about {
         font-size: calc(1px + 1vw);
@@ -57,12 +64,14 @@
 @media only screen and (min-width: 2200px) {
     .container-about {
         height: 240px;
+        margin-top: 390px;
     }
 }
 
 @media only screen and (min-width: 2350px) {
     .container-about {
         height: 260px;
+        margin-top: 400px;
     }
 }
 

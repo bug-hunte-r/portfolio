@@ -6,9 +6,9 @@
 }
 
 .container-cards-in-skill-page{
-    margin-top: 50px;
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 22%);
     width: 100%;
     justify-content: space-evenly;
     row-gap: 100px;

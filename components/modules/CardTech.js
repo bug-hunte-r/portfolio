@@ -1,5 +1,6 @@
 import React from 'react'
 import cardTech from '../../styles/cardTech/cardTech.css'
+import media from '../../styles/cardTech/mediaCardTech.css'
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
