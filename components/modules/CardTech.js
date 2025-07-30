@@ -14,10 +14,10 @@ function CardTech() {
 
             <AnimatedContent
                 distance={1}
-                direction="horizontal"
+                direction="vertical"
                 reverse={false}
                 duration={1}
-                ease="bounce.out"
+                ease="power3.out"
                 initialOpacity={2}
                 animateOpacity
                 scale={0}
@@ -35,7 +35,7 @@ function CardTech() {
                 direction="horizontal"
                 reverse={false}
                 duration={1}
-                ease="bounce.out"
+                ease="power3.out"
                 initialOpacity={2}
                 animateOpacity
                 scale={0}
@@ -53,7 +53,7 @@ function CardTech() {
                 direction="horizontal"
                 reverse={false}
                 duration={1}
-                ease="bounce.out"
+                ease="power3.out"
                 initialOpacity={2}
                 animateOpacity
                 scale={0}
@@ -72,7 +72,7 @@ function CardTech() {
                 direction="horizontal"
                 reverse={false}
                 duration={1}
-                ease="bounce.out"
+                ease="power3.out"
                 initialOpacity={2}
                 animateOpacity
                 scale={0}
@@ -90,7 +90,7 @@ function CardTech() {
                 direction="horizontal"
                 reverse={false}
                 duration={1}
-                ease="bounce.out"
+                ease="power3.out"
                 initialOpacity={2}
                 animateOpacity
                 scale={0}
@@ -108,9 +108,8 @@ function CardTech() {
                 direction="horizontal"
                 reverse={false}
                 duration={1}
-                ease="bounce.out"
+                ease="power3.out"
                 initialOpacity={2}
-                animateOpacity
                 scale={0}
                 threshold={0}
                 delay={0.1}
