@@ -1,0 +1,14 @@
+.title-skills{
+    color: white;
+    font-family: Neo;
+    margin-top: 100px;
+}
+
+.container-cards-in-skill-page{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    width: 100%;
+    justify-content: space-evenly;
+    row-gap: 100px;
+}

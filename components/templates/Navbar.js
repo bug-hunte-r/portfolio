@@ -8,11 +8,6 @@ import SplitText from './../../anim/SplitText'
 
 function Navbar() {
 
-    const handleAnimationComplete = () => {
-        console.log('All letters have animated!');
-    };
-
-
     return (
         <div className='container'>
             <SplitText
@@ -27,7 +22,6 @@ function Navbar() {
                 threshold={0.1}
                 rootMargin="-100px"
                 textAlign="center"
-                onLetterAnimationComplete={handleAnimationComplete}
             />
 
             <div className='container-links'>
@@ -44,7 +38,6 @@ function Navbar() {
                         threshold={0.1}
                         rootMargin="-100px"
                         textAlign="center"
-                        onLetterAnimationComplete={handleAnimationComplete}
                     />
                 </Link>
                 <Link href={'/'}>
@@ -60,7 +53,6 @@ function Navbar() {
                         threshold={0.1}
                         rootMargin="-100px"
                         textAlign="center"
-                        onLetterAnimationComplete={handleAnimationComplete}
                     />
                 </Link>
                 <Link href={'/'}>
@@ -76,7 +68,6 @@ function Navbar() {
                         threshold={0.1}
                         rootMargin="-100px"
                         textAlign="center"
-                        onLetterAnimationComplete={handleAnimationComplete}
                     />
                 </Link>
                 <Link href={'/'}>
@@ -92,7 +83,6 @@ function Navbar() {
                         threshold={0.1}
                         rootMargin="-100px"
                         textAlign="center"
-                        onLetterAnimationComplete={handleAnimationComplete}
                     />
                 </Link>
                 <Link href={'/'}>
@@ -108,7 +98,6 @@ function Navbar() {
                         threshold={0.1}
                         rootMargin="-100px"
                         textAlign="center"
-                        onLetterAnimationComplete={handleAnimationComplete}
                     />
                 </Link>
             </div>

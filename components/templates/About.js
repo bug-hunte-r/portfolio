@@ -5,7 +5,6 @@ import media from '../../styles/about/mediaAbout.css'
 import { FaCircle } from "react-icons/fa6";
 import TextPressure from '../../anim/TextPressure';
 import SplitText from '@/anim/SplitText';
-import Numbers from '../modules/Numbers';
 
 function About() {
   return (
@@ -26,7 +25,6 @@ function About() {
         </div>
       </div>
 
-    <Numbers />
     </div>
   )
 }

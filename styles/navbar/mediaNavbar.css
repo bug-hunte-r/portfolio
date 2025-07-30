@@ -4,6 +4,12 @@
     }
 }
 
+@media only screen and (min-width: 1500px){
+    .logo{
+        font-size: calc(5px + 3vw);
+    }
+}
+
 @media only screen and (max-width: 600px){
     .nav-links{
         font-size: 16px;
@@ -15,9 +21,3 @@
         font-size: 13px;
     }
 }
-
-@media only screen and (max-width: 490px){}
-
-@media only screen and (max-width: 430px){}
-
-@media only screen and (max-width: 400px){}
