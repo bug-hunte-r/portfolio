@@ -3,6 +3,7 @@ import Orb from '../anim/Orb';
 import Header from '@/components/templates/Header';
 import About from '@/components/templates/About';
 import Skills from '@/components/templates/Skills';
+import Projects from '@/components/templates/Projects';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

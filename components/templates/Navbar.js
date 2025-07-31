@@ -5,7 +5,6 @@ import mediaNavbar from '../../styles/navbar/mediaNavbar.css'
 import Link from 'next/link'
 import SplitText from './../../anim/SplitText'
 
-
 function Navbar() {
 
     return (
@@ -25,6 +24,7 @@ function Navbar() {
             />
 
             <div className='container-links'>
+
                 <Link href={'/'}>
                     <SplitText
                         text="Home"
