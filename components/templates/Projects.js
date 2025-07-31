@@ -2,6 +2,7 @@ import React from 'react'
 import projects from '../../styles/projects/projects.css'
 import media from '../../styles/projects/mediaProjects.css'
 import DarkVeil from '@/anim/DarkVeil'
+import CardProject from '../modules/CardProject'
 
 function Projects() {
     return (
@@ -9,6 +10,9 @@ function Projects() {
             <h1 className='title-projects'>Projects</h1>
             <div className='silk'>
                 <DarkVeil />
+            </div>
+            <div className='container-projects-card'>
+                <CardProject />
             </div>
         </div>
     )

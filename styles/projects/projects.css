@@ -3,6 +3,7 @@
     height: 600px;
     position: absolute;
     margin-top: 200px;
+    box-shadow: 0px -10px 25px -12px #4525ff;
 }
 
 .title-projects{
