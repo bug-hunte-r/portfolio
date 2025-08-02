@@ -29,6 +29,13 @@ function CardTech() {
 
             <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <div className='container-cards'>
+                    <RiTailwindCssFill className='img-card-skill tailwind' size={70} />
+                    <h2 className='title-card-skill'>TAILWIND</h2>
+                </div>
+            </FadeContent>
+
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                <div className='container-cards'>
                     <FaJsSquare className='img-card-skill js' size={70} />
                     <h2 className='title-card-skill'>JAVASCRIPT</h2>
                 </div>
@@ -47,14 +54,6 @@ function CardTech() {
                     <h2 className='title-card-skill'>NEXT</h2>
                 </div>
             </FadeContent>
-
-            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-                <div className='container-cards'>
-                    <RiTailwindCssFill className='img-card-skill tailwind' size={70} />
-                    <h2 className='title-card-skill'>TAILWIND</h2>
-                </div>
-            </FadeContent>
-
         </>
     )
 }

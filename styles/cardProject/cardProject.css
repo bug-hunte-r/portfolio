@@ -1,6 +1,6 @@
 .card-project {
     width: 450px;
-    height: 400px;
+    height: 300px;
     cursor: pointer;
     margin-top: 200px;
 }
@@ -18,7 +18,7 @@
     font-size: 25px;
     border-radius: 10px;
     height: 100%;
-    margin-top: -403px;
+    margin-top: -303px;
     color: white;
     display: flex;
     align-items: center;
@@ -36,8 +36,9 @@
     font-family: Neo;
     font-size: 25px;
     height: 100%;
-    margin-top: -403px;
+    margin-top: -303px;
     display: flex;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
 }
