@@ -1,9 +1,9 @@
-.Particles{
+.container-projects-card{
     width: 100%;
     height: 600px;
-    position: absolute;
     margin-top: 200px;
-    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .title-projects{
@@ -13,8 +13,4 @@
     margin-top: 230px;
     position: absolute;
     z-index: 2;
-}
-
-.container-projects-card{
-    display: flex;
 }

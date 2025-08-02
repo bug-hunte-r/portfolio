@@ -1,26 +1,43 @@
-.card-project{
-    width: 310px;
-    border-radius: 10px;
-    position: absolute;
-    margin-top: 400px;
+.card-project {
+    width: 450px;
+    height: 400px;
     cursor: pointer;
-    backdrop-filter: blur(5px);
-    border: 1px solid white;
+    margin-top: 200px;
 }
 
-.img-project{
+.img-project {
     width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    height: 100%;
+    border-radius: 10px;
     object-fit: contain;
-    margin-top: -3px;
 }
 
-.desc-project-card{
-    color: white;
+.desc-project-card {
     font-family: Neo;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 500;
-    padding-top: 10px;
+    backdrop-filter: blur(20px);
+    font-size: 25px;
+    border-radius: 10px;
+    height: 100%;
+    margin-top: -403px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    text-shadow: 2px 1px 5px black;
+    transition: 0.3s;
+}
+
+.desc-none{
+    backdrop-filter: blur(0px);
+    color: transparent;
+    text-shadow: none;
+    transition: 0.3s;
+    font-family: Neo;
+    font-size: 25px;
+    height: 100%;
+    margin-top: -403px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
