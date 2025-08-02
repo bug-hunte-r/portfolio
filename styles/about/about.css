@@ -22,6 +22,7 @@
 .my-name-about{
     color: white;
     font-family: Neo;
+    font-weight: 500;
 }
 
 .container-texts{
@@ -36,6 +37,7 @@
     font-size: calc(3px + 1vw);
     display: flex;
     gap: 10px;
+    font-weight: 300;
 }
 
 .circles-about{

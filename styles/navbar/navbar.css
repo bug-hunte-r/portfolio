@@ -17,6 +17,7 @@
     text-decoration: none;
     color: white;
     transition: 0.3s;
+    font-weight: 300;
 }
 
 .nav-links:hover{
