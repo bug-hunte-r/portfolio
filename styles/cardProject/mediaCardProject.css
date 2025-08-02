@@ -1,0 +1,78 @@
+@media only screen and (max-width: 995px) {
+    .desc-project-card {
+        margin-top: -240px;
+    }
+}
+
+@media only screen and (max-width: 938px) {
+    .desc-project-card {
+        margin-top: -230px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .desc-project-card {
+        margin-top: -210px;
+        font-size: calc(8px + 1vw);
+    }
+}
+
+@media only screen and (max-width: 820px) {
+
+    .desc-project-card {
+        font-size: 20px;
+    }
+
+    .card-project{
+        width: 450px;
+        margin-top: 100px;
+    }
+
+    .gi{
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    .desc-project-card {
+        font-size: 18px;
+    }
+
+    .card-project{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .desc-project-card {
+        font-size: 16px;
+    }
+
+    .card-project{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .desc-project-card {
+        font-size: 15px;
+    }
+
+    .card-project{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .desc-project-card {
+        font-size: 14px;
+    }
+
+    .card-project{
+        width: 280px;
+    }
+}
