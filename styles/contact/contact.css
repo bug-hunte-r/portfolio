@@ -17,7 +17,6 @@
 
 .form-contact {
     display: flex;
-    justify-self: center;
     align-items: center;
     flex-direction: column;
     width: 90%;
@@ -31,13 +30,13 @@
     color: white;
     outline: none;
     padding: 20px;
-    font-size: 18px;
+    font-size: calc(7px + 1vw);
     letter-spacing: 1px;
     border: 1px solid white;
 }
 
 .inputs-contact::placeholder {
-    color: white;
+    color: rgb(228, 228, 228);
 }
 
 .btn-contact {
@@ -46,9 +45,9 @@
     border: 1px solid white;
     color: white;
     border-radius: 10px;
-    font-size: 20px;
-    width: 180px;
-    height: 50px;
+    font-size: calc(8px + 1vw);
+    width: 170px;
+    padding: 13px 0px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -61,14 +60,14 @@
 .contact-ways {
     color: white;
     font-family: Neo;
-    font-size: 40px;
+    font-size: calc(10px + 3vw);
     text-align: center;
 }
 
 .desc-contact {
     color: white;
     font-family: Neo;
-    font-size: 20px;
+    font-size: calc(10px + 1vw);
     text-align: center;
 }
 
@@ -78,4 +77,8 @@
     position: absolute;
     margin-top: 150px;
     box-shadow: 0px -3px 16px -2px #42329e;
+}
+
+.area{
+    padding-bottom: 150px;
 }
