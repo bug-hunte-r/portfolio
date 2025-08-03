@@ -23,7 +23,7 @@ function About() {
         textAlign="center"
       />
 
-      <Image src={'/images/iran.png'} width={1000} height={1000} alt='iran' className='img-iran' />
+      <Image src={'/images/iran.png'} width={1000} height={1000} alt='iran' className='img-iran' id='about' />
       <div className='container-about'>
         <h2 className='my-name-about'>I`m Shayan Jafarnejad</h2>
 

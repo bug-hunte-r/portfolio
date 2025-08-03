@@ -13,6 +13,7 @@ function Projects() {
 
     return (
         <div className='container'>
+            <div id='projects'></div>
             <SplitText
                 text="Projects"
                 className="text-2xl font-semibold text-center title-projects"

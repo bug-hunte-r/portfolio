@@ -7,6 +7,7 @@ import SplitText from '@/anim/SplitText'
 function Skills() {
   return (
     <div className='container'>
+      <div id='skills'></div>
       <SplitText
         text="My Skills"
         className="text-2xl font-semibold text-center title-skills"

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .container-about {
     width: 60%;
     height: 200px;
@@ -19,18 +23,18 @@
     margin-top: 250px;
 }
 
-.my-name-about{
+.my-name-about {
     color: white;
     font-family: Neo;
     font-weight: 500;
 }
 
-.container-texts{
+.container-texts {
     display: flex;
     flex-direction: column;
 }
 
-.texts-about{
+.texts-about {
     color: white;
     font-family: Neo;
     margin-top: 0;
@@ -40,11 +44,11 @@
     font-weight: 300;
 }
 
-.circles-about{
+.circles-about {
     color: blueviolet;
 }
 
-.title-about{
+.title-about {
     position: absolute;
     font-family: Neo;
     color: white;

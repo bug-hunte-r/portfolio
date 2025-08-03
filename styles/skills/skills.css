@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .container-cards-in-skill-page{
     margin-top: 20px;
     display: grid;

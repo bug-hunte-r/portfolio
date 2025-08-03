@@ -40,7 +40,7 @@ function Navbar() {
                         textAlign="center"
                     />
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/#about'}>
                     <SplitText
                         text="About"
                         className="text-2xl font-semibold text-center nav-links"
@@ -55,7 +55,7 @@ function Navbar() {
                         textAlign="center"
                     />
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/#skills'}>
                     <SplitText
                         text="Skills"
                         className="text-2xl font-semibold text-center nav-links"
@@ -70,7 +70,7 @@ function Navbar() {
                         textAlign="center"
                     />
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/#projects'}>
                     <SplitText
                         text="Projects"
                         className="text-2xl font-semibold text-center nav-links"
@@ -85,7 +85,7 @@ function Navbar() {
                         textAlign="center"
                     />
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/#contact'}>
                     <SplitText
                         text="Contact"
                         className="text-2xl font-semibold text-center nav-links"

@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div className='container'>
 
-      <div className='dark'>
+      <div className='dark' id='contact'>
         <DarkVeil />
       </div>
 
