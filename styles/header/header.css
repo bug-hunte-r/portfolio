@@ -4,12 +4,12 @@
     backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.158);
-    margin-top: -490px;
     display: flex;
     flex-direction: column;
     padding: 20px 0px;
     justify-content: center;
     gap: 10px;
+    margin-top: 150px;
 }
 
 .my-name {

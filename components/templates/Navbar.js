@@ -9,98 +9,98 @@ function Navbar() {
 
     return (
         <div className='container'>
-            <SplitText
-                text="JAF."
-                className="text-2xl font-semibold text-center logo"
-                delay={400}
-                duration={2}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
-            />
+                <SplitText
+                    text="JAF."
+                    className="text-2xl font-semibold text-center logo"
+                    delay={400}
+                    duration={2}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                    threshold={0.1}
+                    rootMargin="-100px"
+                    textAlign="center"
+                />
 
-            <div className='container-links'>
+                <div className='container-links'>
 
-                <Link href={'/'}>
-                    <SplitText
-                        text="Home"
-                        className="text-2xl font-semibold text-center nav-links"
-                        delay={200}
-                        duration={0.9}
-                        ease="power3.out"
-                        splitType="chars"
-                        from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 1, y: 0 }}
-                        threshold={0.1}
-                        rootMargin="-100px"
-                        textAlign="center"
-                    />
-                </Link>
-                <Link href={'/#about'}>
-                    <SplitText
-                        text="About"
-                        className="text-2xl font-semibold text-center nav-links"
-                        delay={200}
-                        duration={0.9}
-                        ease="power3.out"
-                        splitType="chars"
-                        from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 1, y: 0 }}
-                        threshold={0.1}
-                        rootMargin="-100px"
-                        textAlign="center"
-                    />
-                </Link>
-                <Link href={'/#skills'}>
-                    <SplitText
-                        text="Skills"
-                        className="text-2xl font-semibold text-center nav-links"
-                        delay={200}
-                        duration={0.9}
-                        ease="power3.out"
-                        splitType="chars"
-                        from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 1, y: 0 }}
-                        threshold={0.1}
-                        rootMargin="-100px"
-                        textAlign="center"
-                    />
-                </Link>
-                <Link href={'/#projects'}>
-                    <SplitText
-                        text="Projects"
-                        className="text-2xl font-semibold text-center nav-links"
-                        delay={200}
-                        duration={0.9}
-                        ease="power3.out"
-                        splitType="chars"
-                        from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 1, y: 0 }}
-                        threshold={0.1}
-                        rootMargin="-100px"
-                        textAlign="center"
-                    />
-                </Link>
-                <Link href={'/#contact'}>
-                    <SplitText
-                        text="Contact"
-                        className="text-2xl font-semibold text-center nav-links"
-                        delay={200}
-                        duration={0.9}
-                        ease="power3.out"
-                        splitType="chars"
-                        from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 1, y: 0 }}
-                        threshold={0.1}
-                        rootMargin="-100px"
-                        textAlign="center"
-                    />
-                </Link>
-            </div>
+                    <Link href={'/'}>
+                        <SplitText
+                            text="Home"
+                            className="text-2xl font-semibold text-center nav-links"
+                            delay={200}
+                            duration={0.9}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                        />
+                    </Link>
+                    <Link href={'/#about'}>
+                        <SplitText
+                            text="About"
+                            className="text-2xl font-semibold text-center nav-links"
+                            delay={200}
+                            duration={0.9}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                        />
+                    </Link>
+                    <Link href={'/#skills'}>
+                        <SplitText
+                            text="Skills"
+                            className="text-2xl font-semibold text-center nav-links"
+                            delay={200}
+                            duration={0.9}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                        />
+                    </Link>
+                    <Link href={'/#projects'}>
+                        <SplitText
+                            text="Projects"
+                            className="text-2xl font-semibold text-center nav-links"
+                            delay={200}
+                            duration={0.9}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                        />
+                    </Link>
+                    <Link href={'/#contact'}>
+                        <SplitText
+                            text="Contact"
+                            className="text-2xl font-semibold text-center nav-links"
+                            delay={200}
+                            duration={0.9}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                        />
+                    </Link>
+                </div>
         </div>
     )
 }
