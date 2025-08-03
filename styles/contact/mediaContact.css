@@ -1,6 +1,23 @@
+@media only screen and (min-width: 700px) {
+    .phone{
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .icons-socials{
+        font-size: 40px;
+    }
+}
+
 @media only screen and (min-width: 1800px) {
     .inputs-contact {
         padding: 30px 20px;
+    }
+
+    .icons-socials{
+        font-size: 50px;
     }
 }
 
@@ -64,7 +81,11 @@
     .inputs-contact{
         font-size: calc(10px + 1vw);
     }
-    
+
+    .phone-number{
+        display: none;
+    }
+ 
 }
 
 @media only screen and (max-width: 480px) {

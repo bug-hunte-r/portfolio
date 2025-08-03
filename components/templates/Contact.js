@@ -2,6 +2,11 @@ import contact from '../../styles/contact/contact.css'
 import media from '../../styles/contact/mediaContact.css'
 import DarkVeil from '@/anim/DarkVeil'
 import SplitText from '@/anim/SplitText'
+import { RiTelegram2Line } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa6";
+
 
 function Contact() {
   return (
@@ -15,7 +20,7 @@ function Contact() {
 
         <div className='container-contact-info'>
           <SplitText
-            text="Contact"
+            text="Contact Ways"
             className="text-2xl font-semibold text-center contact-ways"
             delay={200}
             duration={2}
@@ -27,6 +32,18 @@ function Contact() {
             rootMargin="-100px"
             textAlign="center"
           />
+
+          <div className='socials'>
+            <a href='https://t.me/shayan_jaf'><RiTelegram2Line className='icons-socials' /></a>
+            <a href='https://instagram.com/shayan._.jaf_'><FaInstagram className='icons-socials' /></a>
+            <div className='phone'>
+              <a href={`tel: ${+989149582599}`}><IoPhonePortraitOutline className='icons-socials' /></a>
+              <p className='phone-number'>+98 9149582599</p>
+            </div>
+            <a href='http://github.com/bug-hunte-r'><FaGithub className='icons-socials' /></a>
+          </div>
+
+
           <SplitText
             text="To get in touch, please fill out the form"
             className="text-2xl font-semibold text-center desc-contact"

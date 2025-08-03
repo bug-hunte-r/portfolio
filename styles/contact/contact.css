@@ -82,3 +82,32 @@
 .area{
     padding-bottom: 150px;
 }
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons-socials{
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.icons-socials:hover{
+    transform: translateY(-5px);
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 0;
+}
+
+.phone-number{
+    color: white;
+    font-family: Neo;
+    letter-spacing: 1px;
+}
