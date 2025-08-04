@@ -1,3 +1,13 @@
+.a1{
+    text-decoration: none;
+    color: white;
+}
+
+.a2{
+    text-decoration: none;
+    color: #6F61C0;
+}
+
 .conatiner-header {
     width: 60%;
     height: 330px;
@@ -52,16 +62,15 @@
 }
 
 .btn-hire {
-    border: none;
-    font-family: Neo;
-    color: white;
     background-color: #6F61C0;
+    color: white;
+    font-family: Neo;
     font-size: 18px;
-    border-radius: 10px;
-    padding: 12px 30px;
-    cursor: pointer;
-    transition: 0.3s;
     text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    border: none;
 }
 
 .btn-hire:hover {
@@ -75,11 +84,11 @@
     background-color: white;
     font-size: 18px;
     border-radius: 10px;
-    padding: 10px;
-    width: 140px;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
+    padding: 10px;
+    width: 140px;
 }
 
 .btn-get-resume:hover {

@@ -5,8 +5,6 @@ import media from '../../styles/header/mediaHeader.css'
 import TextType from '../../anim/TextType';
 import SplitText from '@/anim/SplitText';
 import FadeContent from '../../anim/FadeContent'
-import Link from 'next/link';
-
 
 function Header() {
   return (
@@ -43,10 +41,10 @@ function Header() {
 
         <div className='container-btns-header'>
           <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
-            <Link className='btn-hire' href={'/#contact'}>Hire me</Link>
+            <button className='btn-hire'><a href={'/#contact'} className='a1'>Hire me</a></button>
           </FadeContent>
           <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
-            <a href={'Shayan Jafarnejad.pdf'} className='btn-get-resume' download>Get resume</a>
+            <button className='btn-get-resume'><a href={'Shayan Jafarnejad.pdf'} download className='a2'>Get resume</a></button>
           </FadeContent>
         </div>
 
