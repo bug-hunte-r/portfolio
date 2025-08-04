@@ -26,6 +26,24 @@ const Riv = localFont({
   src: '../public/fonts/Riviera.otf',
 })
 
+export const metadata = {
+  title: 'Shayan Jafarnejad | Developer',
+  description: 'Design and develop fast, SEO-friendly, and responsive websites with a focus on user experience. Expertise in JavaScript, React, and Next.js. View portfolios and contact for collaboration.',
+  url: "http://localhost:3000/",
+  metadataBase: new URL("http://localhost:3000/"),
+  
+  openGraph: {
+    title: "Developer`s Portfolio",
+    description: "Design and develop fast, SEO-friendly, and responsive websites with a focus on user experience. Expertise in React, and Next.js.",
+    images: [
+      { url: '/images/web.jpg', width: 800, height: 600 }
+    ],
+    local: 'en_US',
+    type: 'website'
+  }
+
+}
+
 
 export default function RootLayout({ children }) {
   return (
