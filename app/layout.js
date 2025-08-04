@@ -1,4 +1,3 @@
-import Navbar from '@/components/templates/Navbar';
 import { connect } from 'mongoose';
 import localFont from 'next/font/local'
 
@@ -52,7 +51,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={` ${Riv.className} ${Neo.className}`}>
       <body>
-        <Navbar />
         {children}
       </body>
     </html>

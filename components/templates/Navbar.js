@@ -12,23 +12,24 @@ function Navbar() {
     return (
         <div className='container'>
 
-            <SplitText
-                text="JAF."
-                className="text-2xl font-semibold text-center logo"
-                delay={400}
-                duration={2}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
-            />
+            <div className='container-logo'>
+                <SplitText
+                    text="JAF."
+                    className="text-2xl font-semibold text-center logo"
+                    delay={400}
+                    duration={2}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                    threshold={0.1}
+                    rootMargin="-100px"
+                />
+            </div>
 
             <div className='container-links'>
 
-                <Link href={'/signin'}><CiUser className='icon-user' /></Link>
+                <Link href={'/signup'}><CiUser className='icon-user' /></Link>
 
                 <Link href={'/'}>
                     <SplitText

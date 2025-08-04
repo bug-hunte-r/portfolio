@@ -5,10 +5,12 @@ import About from '@/components/templates/About';
 import Skills from '@/components/templates/Skills';
 import Projects from '@/components/templates/Projects';
 import Contact from '@/components/templates/Contact';
+import Navbar from '@/components/templates/Navbar';
 
 export default function Home() {
   return (
     <div className='container'>
+      <Navbar />
       <div style={{ width: '100%', height: '600px', position: 'relative' }}>
         <Orb
           hoverIntensity={0.5}

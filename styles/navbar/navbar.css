@@ -1,3 +1,9 @@
+.container-logo{
+    display: flex;
+    justify-self: center;
+    margin-top: 10px;
+}
+
 .logo {
     color: white;
     font-size: 35px;
