@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1400px) {
+    .inputs-login{
+        font-size: calc(10px + 1vw);
+    }
+    
+    .btn-login{
+        font-size: calc(10px + 1vw);
+    }
+    
+    .title-login{
+        font-size: calc(15px + 2vw);
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .inputs-login{
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .inputs-login{
+        width: 80%;
+    }
+}

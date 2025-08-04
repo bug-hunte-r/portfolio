@@ -1,16 +1,16 @@
-import signup from '../../styles/Signup/Signup.css'
-import media from '../../styles/Signup/mediaSignup.css'
+import login from '../../styles/login/login.css'
+import media from '../../styles/login/mediaLogin.css'
 import Silk from '@/anim/Silk'
 import SplitText from '@/anim/SplitText'
 
-function Signup() {
+function Login() {
   return (
     <div className='container'>
 
-      <div className='container-title-signup'>
+      <div className='container-title-login'>
         <SplitText
-          text="Signup"
-          className="title-Signup"
+          text="Login"
+          className="title-login"
           delay={200}
           duration={2}
           ease="power3.out"
@@ -32,14 +32,13 @@ function Signup() {
         />
       </div>
 
-      <div className='form-Signup'>
-        <input placeholder='Username' type='text' className='inputs-Signup' />
-        <input placeholder='Email' type='email' className='inputs-Signup' />
-        <input placeholder='Password' type='password' className='inputs-Signup' />
-        <button className='btn-Signup'>Signup</button>
+      <div className='form-login'>
+        <input placeholder='Username | Email' type='text' className='inputs-login' />
+        <input placeholder='Password' type='password' className='inputs-login' />
+        <button className='btn-login'>Login</button>
       </div>
     </div>
   )
 }
 
-export default Signup
+export default Login
