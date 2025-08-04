@@ -58,7 +58,7 @@ function Contact() {
         <div className='form-contact'>
           <input placeholder='Your Name' className='inputs-contact' type='text' />
           <input placeholder='Your Email' className='inputs-contact' type='email' />
-          <input placeholder='Your Message' className='inputs-contact area' type='text' />
+          <input placeholder='Your Short Message' className='inputs-contact area' type='text' />
           <button className='btn-contact'>Send</button>
         </div>
 

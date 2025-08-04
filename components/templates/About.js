@@ -8,6 +8,7 @@ import SplitText from '@/anim/SplitText';
 function About() {
   return (
     <div className='container'>
+      <div id='about'></div>
 
       <SplitText
         text="About me"
@@ -23,7 +24,7 @@ function About() {
         textAlign="center"
       />
 
-      <Image src={'/images/iran.png'} width={1000} height={1000} alt='iran' className='img-iran' id='about' />
+      <Image src={'/images/iran.png'} width={1000} height={1000} alt='iran' className='img-iran' />
       <div className='container-about'>
         <h2 className='my-name-about'>I`m Shayan Jafarnejad</h2>
 
