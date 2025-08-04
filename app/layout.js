@@ -39,7 +39,7 @@ export const metadata = {
     title: "Developer`s Portfolio",
     description: "Design and develop fast, SEO-friendly, and responsive websites with a focus on user experience. Expertise in React, and Next.js.",
     images: [
-      { url: '/images/web.jpg', width: 800, height: 600 }
+      { url: '/images/web.png', width: 800, height: 600 }
     ],
     local: 'en_US',
     type: 'website'

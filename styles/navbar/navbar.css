@@ -1,18 +1,19 @@
-.logo{
+.logo {
     color: white;
     font-size: 35px;
     cursor: pointer;
     margin-top: 0;
 }
 
-.container-links{
+.container-links {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     margin-top: -20px;
+    align-items: center;
 }
 
-.nav-links{
+.nav-links {
     font-size: calc(7px + 1vw);
     font-family: Neo;
     text-decoration: none;
@@ -21,6 +22,13 @@
     font-weight: 300;
 }
 
-.nav-links:hover{
+.nav-links:hover {
     transform: translateY(-5px);
+}
+
+.icon-user{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    margin-top: -10px;
 }
