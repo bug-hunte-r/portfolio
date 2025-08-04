@@ -1,12 +1,12 @@
 @media only screen and (min-width: 700px) {
-    .phone{
+    .phone {
         pointer-events: none;
         cursor: default;
     }
 }
 
 @media only screen and (min-width: 1600px) {
-    .icons-socials{
+    .icons-socials {
         font-size: 40px;
     }
 }
@@ -16,8 +16,12 @@
         padding: 30px 20px;
     }
 
-    .icons-socials{
+    .icons-socials {
         font-size: 50px;
+    }
+
+    .area{
+        padding-bottom: 150px;
     }
 }
 
@@ -31,7 +35,7 @@
     }
 
     .area{
-        padding-bottom: 130px;
+        padding-bottom: 70px;
     }
 }
 
@@ -47,7 +51,7 @@
     }
 
     .area{
-        padding-bottom: 120px;
+        padding-bottom: 70px;
     }
 }
 
@@ -58,7 +62,7 @@
         height: 700px;
     }
 
-    .dark{
+    .dark {
         height: 700px;
     }
 
@@ -77,15 +81,19 @@
     .form-contact {
         width: 130%;
     }
-    
-    .inputs-contact{
+
+    .inputs-contact {
         font-size: calc(10px + 1vw);
     }
 
-    .phone-number{
+    .phone-number {
         display: none;
     }
- 
+
+    .area{
+        padding-bottom: 70px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -94,23 +102,14 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .area{
-        padding-bottom: 90px;
-    }
-}
-
 @media only screen and (max-width: 403px) {
     .container-contact-info {
         width: 180%;
     }
 }
+
 @media only screen and (max-width: 374px) {
     .container-contact-info {
         width: 190%;
-    }
-
-    .area{
-        padding-bottom: 70px;
     }
 }

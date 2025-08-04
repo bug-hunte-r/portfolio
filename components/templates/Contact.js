@@ -1,6 +1,5 @@
 import contact from '../../styles/contact/contact.css'
 import media from '../../styles/contact/mediaContact.css'
-import DarkVeil from '@/anim/DarkVeil'
 import SplitText from '@/anim/SplitText'
 import { RiTelegram2Line } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
@@ -12,11 +11,7 @@ function Contact() {
   return (
     <div className='container'>
 
-      <div className='dark' id='contact'>
-        <DarkVeil />
-      </div>
-
-      <div className='container-contact'>
+      <div className='container-contact' id='contact'>
 
         <div className='container-contact-info'>
           <SplitText

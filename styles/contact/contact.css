@@ -11,6 +11,9 @@ html {
     margin-top: 150px;
     align-items: center;
     justify-items: center;
+    background-image: url('/images/back.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 150%;
 }
 
 .container-contact-info {
@@ -84,7 +87,7 @@ html {
 }
 
 .area{
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .socials{
