@@ -28,6 +28,9 @@ const Riv = localFont({
 
 export const metadata = {
   title: 'Shayan Jafarnejad | Developer',
+  icons: {
+    icon: '/images/mainFont.png',
+  },
   description: 'Design and develop fast, SEO-friendly, and responsive websites with a focus on user experience. Expertise in JavaScript, React, and Next.js. View portfolios and contact for collaboration.',
   url: "http://localhost:3000/",
   metadataBase: new URL("http://localhost:3000/"),
