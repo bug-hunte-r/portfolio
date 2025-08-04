@@ -1,26 +1,11 @@
+import Link from 'next/link'
 import signup from '../../styles/Signup/Signup.css'
 import media from '../../styles/Signup/mediaSignup.css'
 import Silk from '@/anim/Silk'
-import SplitText from '@/anim/SplitText'
 
 function Signup() {
   return (
     <div className='container'>
-
-      <div className='container-title-signup'>
-        <SplitText
-          text="Signup"
-          className="title-Signup"
-          delay={200}
-          duration={2}
-          ease="power3.out"
-          splitType="chars"
-          from={{ opacity: 0, y: 40 }}
-          to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-100px"
-        />
-      </div>
 
       <div className='silk'>
         <Silk
@@ -33,10 +18,12 @@ function Signup() {
       </div>
 
       <div className='form-Signup'>
+        <h1 className='title-Signup'>Signup</h1>
         <input placeholder='Username' type='text' className='inputs-Signup' />
         <input placeholder='Email' type='email' className='inputs-Signup' />
         <input placeholder='Password' type='password' className='inputs-Signup' />
         <button className='btn-Signup'>Signup</button>
+        <p className='text-signup'>Already have an account? <Link href={'/login'} className='link-signup'>Login</Link></p>
       </div>
     </div>
   )

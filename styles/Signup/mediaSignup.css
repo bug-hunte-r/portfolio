@@ -18,6 +18,26 @@
     }
 }
 
+@media only screen and (max-width: 770px) {
+    .text-signup {
+        font-size: calc(7px + 1vw);
+    }
+
+    .link-signup {
+        font-size: calc(7px + 1vw);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-signup {
+        font-size: calc(10px + 1vw);
+    }
+
+    .link-signup {
+        font-size: calc(10px + 1vw);
+    }
+}
+
 @media only screen and (max-width: 450px) {
     .inputs-Signup{
         width: 80%;
