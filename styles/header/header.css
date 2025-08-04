@@ -58,10 +58,10 @@
     background-color: #6F61C0;
     font-size: 18px;
     border-radius: 10px;
-    padding: 10px;
-    width: 140px;
+    padding: 12px 30px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-hire:hover {
@@ -79,6 +79,7 @@
     width: 140px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-get-resume:hover {
