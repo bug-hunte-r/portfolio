@@ -5,7 +5,7 @@ import mediaNavbar from '../../styles/navbar/mediaNavbar.css'
 import Link from 'next/link'
 import SplitText from './../../anim/SplitText'
 import { CiUser } from "react-icons/ci";
-
+import { FiLogOut } from "react-icons/fi";
 
 function Navbar({ user }) {
 
@@ -28,10 +28,6 @@ function Navbar({ user }) {
             </div>
 
             <div className='container-links'>
-
-                {!user && (
-                    <Link href={'/signup'}><CiUser className='icon-user' /></Link>
-                )}
 
                 <Link href={'/'}>
                     <SplitText
@@ -109,6 +105,12 @@ function Navbar({ user }) {
                         textAlign="center"
                     />
                 </Link>
+
+                {!user ? (
+                    <Link href={'/signup'}><CiUser className='icon-user' /></Link>
+                ) : (
+                    <Link href={'/'}><FiLogOut className='icon-user' /></Link>
+                )}
 
             </div>
         </div>
