@@ -45,7 +45,7 @@ const getUser = async () => {
     }
 
     const user = await User.findOne({
-        email: verifedToken.data?.email
+        email: verifedToken?.data?.email
     })
 
     return user

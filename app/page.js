@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <div className='container'>
-      <Navbar user={user.email} />
+      <Navbar user={user?.email} />
       <div style={{ width: '100%', height: '600px', position: 'relative' }}>
         <Orb
           hoverIntensity={0.5}

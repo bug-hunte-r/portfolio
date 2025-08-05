@@ -5,9 +5,14 @@ import { RiTelegram2Line } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
+import FormContact from './FormContact';
+import { getUser } from '@/utils/auth';
 
 
-function Contact() {
+async function Contact() {
+
+  const user = await getUser()
+
   return (
     <div className='container'>
 
@@ -54,13 +59,7 @@ function Contact() {
           />
         </div>
 
-
-        <div className='form-contact'>
-          <input placeholder='Your Name' className='inputs-contact' type='text' />
-          <input placeholder='Your Email' className='inputs-contact' type='email' />
-          <input placeholder='Your Short Message' className='inputs-contact area' type='text' />
-          <button className='btn-contact'>Send</button>
-        </div>
+        <FormContact user={user?.email} />
 
       </div>
     </div>
