@@ -1,5 +1,6 @@
 "use client"
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 import { useState } from 'react'
 
 function InputsSignup() {
@@ -22,10 +23,18 @@ function InputsSignup() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(userMap)
-        })        
+        })
         const data = await res.json()
 
         alert(data.message)
+
+        if (res.status === 201) {
+            setUsername('')
+            setEmail('')
+            setPassword('')
+
+            redirect('/#contact')
+        }
     }
 
 
