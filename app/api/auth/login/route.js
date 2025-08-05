@@ -1,6 +1,7 @@
 import User from "@/models/user"
 import { generateToken, IsvalidPassHandler } from "@/utils/auth"
 import connectToDb from "@/utils/db"
+import { serialize } from "cookie"
 
 export const POST = async (req) => {
 

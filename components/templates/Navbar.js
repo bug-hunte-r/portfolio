@@ -7,7 +7,7 @@ import SplitText from './../../anim/SplitText'
 import { CiUser } from "react-icons/ci";
 
 
-function Navbar() {
+function Navbar({ user }) {
 
     return (
         <div className='container'>
@@ -29,7 +29,9 @@ function Navbar() {
 
             <div className='container-links'>
 
-                <Link href={'/signup'}><CiUser className='icon-user' /></Link>
+                {!user && (
+                    <Link href={'/signup'}><CiUser className='icon-user' /></Link>
+                )}
 
                 <Link href={'/'}>
                     <SplitText

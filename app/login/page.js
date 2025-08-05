@@ -3,8 +3,17 @@ import login from '../../styles/login/login.css'
 import media from '../../styles/login/mediaLogin.css'
 import Silk from '@/anim/Silk'
 import FormLogin from '@/components/templates/FormLogin'
+import { getUser } from '@/utils/auth'
+import { redirect } from 'next/navigation'
 
-function Login() {
+async function Login() {
+
+  const user = await getUser()
+
+  if (user) {
+      redirect('/')
+  }
+
   return (
     <div className='container'>
 
