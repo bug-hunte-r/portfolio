@@ -20,20 +20,7 @@ export const POST = async (req) => {
         Message.create({ name, message, user: user._id })
 
         return new Response(JSON.stringify({ message: 'Message Send Successfully' }), { status: 201 })
-
-    } catch (error) {
-        return new Response(JSON.stringify({ message: error.message }), { status: 500 })
-    }
-}
-
-export const GET = async () => {
-
-    try {
-        await connectToDb()
-        const messages = await Message.find({}).populate('user')
-
-        return new Response(JSON.stringify({ messages }), { status: 200 })
-
+        
     } catch (error) {
         return new Response(JSON.stringify({ message: error.message }), { status: 500 })
     }

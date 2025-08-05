@@ -7,7 +7,8 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
 import FormContact from './FormContact';
 import { getUser } from '@/utils/auth';
-
+import Link from 'next/link';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 async function Contact() {
 
@@ -57,6 +58,9 @@ async function Contact() {
             rootMargin="-100px"
             textAlign="center"
           />
+          {user.role === 'ADMIN' && (
+            <Link className='link-messages' href={'/messages'}>Messages <FaArrowRightLong /></Link>
+          )}
         </div>
 
         <FormContact user={user?.email} />

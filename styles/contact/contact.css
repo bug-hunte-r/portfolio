@@ -119,3 +119,18 @@ html {
     font-family: Neo;
     letter-spacing: 1px;
 }
+
+.link-messages{
+    position: absolute;
+    color: white;
+    font-family: Neo;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -20px;
+    align-items: center;
+    gap: 8px;
+}

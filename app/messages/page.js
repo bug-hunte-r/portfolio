@@ -2,7 +2,6 @@ import messages from '../../styles/messages/messages.css'
 import media from '../../styles/messages/mediaMessages.css'
 import Link from 'next/link'
 import { FaArrowRightLong } from "react-icons/fa6";
-import { CiSquareRemove } from "react-icons/ci";
 import connectToDb from '@/utils/db';
 import Message from '@/models/messgae';
 import { getUser } from '@/utils/auth';
@@ -15,10 +14,10 @@ async function page() {
 
     const user = await getUser()
 
-    if (user.role !== 'ADMIN') {
+    if (user.role !== 'ADMIN' || !user) {
         redirect('/')
     }
-    
+
     return (
         <div className='container'>
             <div className='container-messages'>
@@ -27,13 +26,14 @@ async function page() {
                     <Link href={'/'} className='link-to-home-messages'>Home <FaArrowRightLong className='icon-go-home-messages' /></Link>
                 </div>
 
-                {allMessages.map((message) => (
+                {allMessages.map((message, index) => (
                     <div className='messages-box' key={message._id}>
-                        <h4 className='user-name'><span className='titles-box'>Name</span>: {message.name}</h4>
-                        <h4 className='username-user'><span className='titles-box'>Username</span>: {message.user.username}</h4>
-                        <h2 className='message-body'><span className='titles-box'>Message</span>: {message.message}</h2>
-                        <h3 className='date-message'><span className='titles-box'>Date</span>: {message.createdAt.toLocaleDateString("fa-IR")}</h3>
-                        <CiSquareRemove className='icon-remove-messagee' />
+                        <h4 className='texts-box-messages id'><span className='titles-box'>ID:</span> {index + 1}</h4>
+                        <h4 className='texts-box-messages'><span className='titles-box'>Name:</span> {message.name}</h4>
+                        <h4 className='texts-box-messages'><span className='titles-box'>Username:</span> {message.user.username}</h4>
+                        <h4 className='texts-box-messages'><span className='titles-box'>Email:</span> {message.user.email}</h4>
+                        <h3 className='texts-box-messages'><span className='titles-box'>Message:</span> {message.message}</h3>
+                        <h3 className='texts-box-messages date'><span className='titles-box'>Date:</span> {message.createdAt.toLocaleDateString("fa-IR")}</h3>
                     </div>
                 ))}
 
