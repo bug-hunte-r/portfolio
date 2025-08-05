@@ -17,9 +17,7 @@ const messageSchmea = mongoose.Schema({
         type: mongoose.Types.ObjectId,
         ref: 'User'
     }
-},
-    { timestamps: true }
-)
+}, { timestamps: true })
 
 const Message = mongoose.models.Message || mongoose.model('Message', messageSchmea)
 

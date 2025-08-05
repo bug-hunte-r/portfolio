@@ -43,6 +43,7 @@ body {
     letter-spacing: 1px;
     font-weight: 500;
     color: white;
+    font-family: Neo;
 }
 
 .user-name {
@@ -65,7 +66,6 @@ body {
 
 .date-message {
     color: gray;
-    font-family: Neo;
     padding-left: 20px;
 }
 
