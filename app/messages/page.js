@@ -5,11 +5,19 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { CiSquareRemove } from "react-icons/ci";
 import connectToDb from '@/utils/db';
 import Message from '@/models/messgae';
+import { getUser } from '@/utils/auth';
+import { redirect } from 'next/navigation';
 
 async function page() {
 
     await connectToDb()
     const allMessages = await Message.find({}).populate('user')
+
+    const user = await getUser()
+
+    if (user.role !== 'ADMIN') {
+        redirect('/')
+    }
     
     return (
         <div className='container'>
