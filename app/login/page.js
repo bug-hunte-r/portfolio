@@ -2,6 +2,7 @@ import Link from 'next/link'
 import login from '../../styles/login/login.css'
 import media from '../../styles/login/mediaLogin.css'
 import Silk from '@/anim/Silk'
+import FormLogin from '@/components/templates/FormLogin'
 
 function Login() {
   return (
@@ -17,13 +18,7 @@ function Login() {
         />
       </div>
 
-      <div className='form-login'>
-        <h1 className='title-login'>Login</h1>
-        <input placeholder='Username or Email' type='text' className='inputs-login' />
-        <input placeholder='Password' type='password' className='inputs-login' />
-        <button className='btn-login'>Login</button>
-        <p className='text-login'>Don`t have an account? <Link href={'/signup'} className='link-login'>Signup</Link></p>
-      </div>
+      <FormLogin />
     </div>
   )
 }

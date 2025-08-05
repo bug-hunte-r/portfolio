@@ -11,12 +11,12 @@ export const POST = async (req) => {
 
         const { identifier, password } = body
 
-        if (!identifier.trim || !password.trim()) {
+        if (!identifier.trim() || !password.trim()) {
             return new Response(JSON.stringify({ message: 'Datas are not valid!' }), { status: 422 })
         }
 
         const user = await User.findOne({
-            $or: [{ identifier: username }, { identifier: email }]
+            $or: [{ username: identifier }, { email: identifier }]
         })
 
         if (!user) {
