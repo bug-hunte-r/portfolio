@@ -6,7 +6,8 @@ export const GET = async () => {
         await connectToDb()
 
         return new Response(JSON.stringify({ message: 'You`re Logged out seccessfully!' }), {
-            status: 200, headers: {
+            status: 204,
+            headers: {
                 'Set-Cookie': serialize('token', '', {
                     maxAge: 0,
                     path: '/'
@@ -14,6 +15,6 @@ export const GET = async () => {
             }
         })
     } catch (error) {
-        return new Response(JSON.stringify({message: error.message}), {status: 500})
+        return new Response(JSON.stringify({ message: error.message }), { status: 500 })
     }
 }
