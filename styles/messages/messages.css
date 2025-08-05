@@ -42,12 +42,12 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 500;
-    color: white;
+    color: #6f61c0;
     font-family: Neo;
 }
 
 .texts-box-messages {
-    color: orangered;
+    color: white;
     font-family: Neo;
     padding-left: 20px;
     letter-spacing: 2px;

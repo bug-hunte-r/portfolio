@@ -13,7 +13,7 @@ export const POST = async (req) => {
         const { identifier, password } = body
 
         if (!identifier.trim() || !password.trim()) {
-            return new Response(JSON.stringify({ message: 'Datas are not valid!' }), { status: 422 })
+            return new Response(JSON.stringify({ message: 'Datas are not valid!' }), { status: 400 })
         }
 
         const user = await User.findOne({
@@ -27,7 +27,7 @@ export const POST = async (req) => {
         const IsvalidPass = await IsvalidPassHandler(password, user.password)
 
         if (!IsvalidPass) {
-            return new Response(JSON.stringify({ message: 'Username or Password is not correct' }), { status: 422 })
+            return new Response(JSON.stringify({ message: 'Username or Password is not correct' }), { status: 401 })
         }
 
         const token = generateToken({ email: user.email })

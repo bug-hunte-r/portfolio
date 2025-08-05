@@ -13,7 +13,7 @@ export const POST = async (req) => {
         const { username, email, password } = body
 
         if (!username.trim() || !email.trim() || !password.trim()) {
-            return new Response(JSON.stringify({ message: 'Datas are not valid!' }), { status: 422 })
+            return new Response(JSON.stringify({ message: 'Datas are not valid!' }), { status: 400 })
         }
 
         const isUserExist = await User.findOne({
@@ -21,7 +21,7 @@ export const POST = async (req) => {
         })
 
         if (isUserExist) {
-            return new Response(JSON.stringify({ message: 'This username or email is already exist' }), { status: 422 })
+            return new Response(JSON.stringify({ message: 'This username or email is already exist' }), { status: 409 })
         }
         
         const hashedPass = await hashPasshandler(password)
