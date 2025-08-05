@@ -2,21 +2,23 @@ import messages from '../../styles/messages/messages.css'
 import media from '../../styles/messages/mediaMessages.css'
 import Link from 'next/link'
 import { FaArrowRightLong } from "react-icons/fa6";
+import { redirect } from 'next/navigation';
+import { getUser } from '@/utils/auth';
 import connectToDb from '@/utils/db';
 import Message from '@/models/messgae';
-import { getUser } from '@/utils/auth';
-import { redirect } from 'next/navigation';
 
 async function page() {
 
     await connectToDb()
-    const allMessages = await Message.find({}).populate('user')
 
     const user = await getUser()
 
     if (user.role !== 'ADMIN' || !user) {
         redirect('/')
     }
+
+    const allMessages = await Message.find({}).populate('user')
+
 
     return (
         <div className='container'>

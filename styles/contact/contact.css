@@ -134,3 +134,10 @@ html {
     align-items: center;
     gap: 8px;
 }
+
+.text-top-conatct{
+    font-family: Neo;
+    color: white;
+    font-weight: 300;
+    font-size: calc(15px + 1vw);
+}

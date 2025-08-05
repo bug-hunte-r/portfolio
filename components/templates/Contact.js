@@ -63,7 +63,7 @@ async function Contact() {
           )}
         </div>
 
-        <FormContact user={user?.email} />
+        <FormContact user={user?.email} username={user?.username} />
 
       </div>
     </div>

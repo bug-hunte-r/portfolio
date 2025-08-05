@@ -1,12 +1,10 @@
 "use client"
-import React from 'react'
 import navbar from '../../styles/navbar/navbar.css'
 import mediaNavbar from '../../styles/navbar/mediaNavbar.css'
 import Link from 'next/link'
 import SplitText from './../../anim/SplitText'
 import { CiUser } from "react-icons/ci";
 import { FiLogOut } from "react-icons/fi";
-import { redirect } from 'next/navigation'
 import { ToastContainer, toast } from 'react-toastify';
 
 function Navbar({ user }) {
@@ -22,7 +20,7 @@ function Navbar({ user }) {
 
         if (res.status === 200) {
             notifyLogOut()
-            redirect('/')
+            location.reload()
         }
         if (res.status === 500) {
             notifyServerErorr()
