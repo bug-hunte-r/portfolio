@@ -1,11 +1,17 @@
 "use client"
 import { redirect } from 'next/navigation'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
 
 function FormContact({ user }) {
 
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
+
+    const notifyMessageSend = () => toast.success("Message Send Successfully");
+    const notifyDataNotValid = () => toast.error("Datas are not valid");
+    const notifyServerErorr = () => toast.error("Internal Server Erorr");
+    const notifyFirstLogin = () => toast.warning("Please First Login");
 
     const sendMessageHandler = async () => {
 
@@ -25,15 +31,23 @@ function FormContact({ user }) {
             })
             const data = await res.json()
 
-            alert(data.message)
+            if (res.status === 400) {
+                notifyDataNotValid()
+            }
+
+            if (res.status === 500) {
+                notifyServerErorr()
+            }
 
             if (res.status === 201) {
+
+                notifyMessageSend()
                 setName('')
                 setMessage('')
             }
 
         } else {
-            alert('Please first login')
+            notifyFirstLogin()
             redirect('/login')
         }
     }
@@ -43,6 +57,17 @@ function FormContact({ user }) {
             <input placeholder='Your Name' className='inputs-contact' type='text' value={name} onChange={event => setName(event.target.value)} />
             <input placeholder='Your Short Message' className='inputs-contact area' type='text' value={message} onChange={event => setMessage(event.target.value)} />
             <button className='btn-contact' onClick={sendMessageHandler}>Send</button>
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
         </div>
     )
 }

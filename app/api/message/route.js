@@ -12,7 +12,7 @@ export const POST = async (req) => {
         const { name, message } = body
 
         if (!name.trim() || !message.trim()) {
-            return new Response(JSON.stringify({ message: 'Datas are not valid' }), { status: 422 })
+            return new Response(JSON.stringify({ message: 'Datas are not valid' }), { status: 400 })
         }
 
         const user = await getUser()

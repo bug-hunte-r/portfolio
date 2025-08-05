@@ -9,7 +9,7 @@ function FormLogin() {
     const [identifier, setIdentifier] = useState('')
     const [password, setPassword] = useState('')
 
-    const notifyNotValid = () => toast.warning("Datas are not valid");
+    const notifyNotValid = () => toast.error("Datas are not valid");
     const notifyAccoutNotFound = () => toast.error("Account not found");
     const notifyDataNotCorrect = () => toast.error("Username or Password is not correct");
     const notifyLoggedIn = () => toast.success("You are Logged In Successfully");

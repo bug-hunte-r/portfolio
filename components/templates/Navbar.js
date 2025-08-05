@@ -7,17 +7,25 @@ import SplitText from './../../anim/SplitText'
 import { CiUser } from "react-icons/ci";
 import { FiLogOut } from "react-icons/fi";
 import { redirect } from 'next/navigation'
+import { ToastContainer, toast } from 'react-toastify';
 
 function Navbar({ user }) {
 
+    const notifyLogOut = () => toast.success("You are logged out successfully");
+    const notifyServerErorr = () => toast.error("Internal Server Error");
+
+
     const logoutHandler = async () => {
+
         const res = await fetch('/api/auth/logout')
         const data = await res.json()
 
-        alert(data.message)
-
         if (res.status === 200) {
+            notifyLogOut()
             redirect('/')
+        }
+        if (res.status === 500) {
+            notifyServerErorr()
         }
     }
 
@@ -125,6 +133,17 @@ function Navbar({ user }) {
                 )}
 
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
         </div>
     )
 }
