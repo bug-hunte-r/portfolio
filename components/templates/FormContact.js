@@ -1,5 +1,4 @@
 "use client"
-import SplitText from '@/anim/SplitText';
 import { redirect } from 'next/navigation'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
@@ -56,33 +55,9 @@ function FormContact({ user, username }) {
     return (
         <div className='form-contact'>
             {username ? (
-                <SplitText
-                    text={`Send Your Message ${username}`}
-                    className="text-2xl font-semibold text-center text-top-conatct"
-                    delay={100}
-                    duration={2}
-                    ease="power3.out"
-                    splitType="chars"
-                    from={{ opacity: 0, y: 40 }}
-                    to={{ opacity: 1, y: 0 }}
-                    threshold={0}
-                    rootMargin="-100px"
-                    textAlign="center"
-                />
+                <h2 className='text-top-conatct'>Send Your Message <span className='username'>{username}</span></h2>
             ) : (
-                <SplitText
-                    text="Please Login First"
-                    className="text-2xl font-semibold text-center text-top-conatct"
-                    delay={100}
-                    duration={2}
-                    ease="power3.out"
-                    splitType="chars"
-                    from={{ opacity: 0, y: 40 }}
-                    to={{ opacity: 1, y: 0 }}
-                    threshold={0}
-                    rootMargin="-100px"
-                    textAlign="center"
-                />
+                <h2 className='text-top-conatct'>Please Login First</h2>
             )}
 
             <input placeholder='Your Name' className='inputs-contact' type='text' value={name} onChange={event => setName(event.target.value)} />

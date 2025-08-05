@@ -19,14 +19,17 @@ async function page() {
 
     const allMessages = await Message.find({}).populate('user')
 
+    console.log(allMessages);
+
 
     return (
         <div className='container'>
             <div className='container-messages'>
                 <div className='container-link-and-title-messages'>
-                    <h1 className='title-messages'>Messages</h1>
+                    <h1 className='title-messages'>{allMessages.length} Messages</h1>
                     <Link href={'/'} className='link-to-home-messages'>Home <FaArrowRightLong className='icon-go-home-messages' /></Link>
                 </div>
+
 
                 {allMessages.map((message, index) => (
                     <div className='messages-box' key={message._id}>
@@ -38,6 +41,10 @@ async function page() {
                         <h3 className='texts-box-messages date'><span className='titles-box'>Date:</span> {message.createdAt.toLocaleDateString("fa-IR")}</h3>
                     </div>
                 ))}
+
+                {allMessages.length === 0 && (
+                    <h2 className='no-message'>There Is No Message</h2>
+                )}
 
             </div>
         </div>

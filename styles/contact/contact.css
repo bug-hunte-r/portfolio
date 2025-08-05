@@ -87,40 +87,40 @@ html {
     box-shadow: 0px -3px 16px -2px #42329e;
 }
 
-.area{
+.area {
     padding-bottom: 100px;
 }
 
-.socials{
+.socials {
     display: flex;
     justify-content: space-evenly;
 }
 
-.icons-socials{
+.icons-socials {
     color: white;
     cursor: pointer;
     font-size: 30px;
     transition: 0.3s;
 }
 
-.icons-socials:hover{
+.icons-socials:hover {
     transform: translateY(-5px);
 }
 
-.phone{
+.phone {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 0;
 }
 
-.phone-number{
+.phone-number {
     color: white;
     font-family: Neo;
     letter-spacing: 1px;
 }
 
-.link-messages{
+.link-messages {
     position: absolute;
     color: white;
     font-family: Neo;
@@ -135,9 +135,14 @@ html {
     gap: 8px;
 }
 
-.text-top-conatct{
+.text-top-conatct {
     font-family: Neo;
     color: white;
     font-weight: 300;
+    font-size: calc(15px + 1vw);
+}
+
+.username {
+    font-weight: 500;
     font-size: calc(15px + 1vw);
 }
