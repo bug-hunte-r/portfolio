@@ -22,7 +22,7 @@ function Login() {
         <input placeholder='Username or Email' type='text' className='inputs-login' />
         <input placeholder='Password' type='password' className='inputs-login' />
         <button className='btn-login'>Login</button>
-        <p className='text-login'>You do not have an account? <Link href={'/signup'} className='link-login'>Signup</Link></p>
+        <p className='text-login'>Don`t have an account? <Link href={'/signup'} className='link-login'>Signup</Link></p>
       </div>
     </div>
   )
