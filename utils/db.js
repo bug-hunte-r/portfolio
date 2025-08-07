@@ -4,7 +4,7 @@ const connectToDb = async () => {
   if (mongoose.connections[0].readyState) return;
 
   try {
-    await mongoose.connect("mongodb://localhost:27017/Portfolio", {
+    await mongoose.connect(process.env.MongoDBUrl, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
