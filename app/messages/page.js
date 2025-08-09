@@ -3,9 +3,9 @@ import media from '../../styles/messages/mediaMessages.css'
 import Link from 'next/link'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { redirect } from 'next/navigation';
-import { getUser } from '@/utils/auth';
 import connectToDb from '@/utils/db';
 import Message from '@/models/messgae';
+import { getUser } from '@/utils/auth';
 
 async function page() {
 
@@ -18,9 +18,6 @@ async function page() {
     }
 
     const allMessages = await Message.find({}).populate('user')
-
-    console.log(allMessages);
-
 
     return (
         <div className='container'>
