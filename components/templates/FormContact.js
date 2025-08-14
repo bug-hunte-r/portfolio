@@ -8,7 +8,7 @@ function FormContact({ user, username }) {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
 
-    const notifyMessageSend = () => toast.success("Message Send Successfully");
+    const notifyMessageSend = () => toast.success("Message Sended Successfully");
     const notifyDataNotValid = () => toast.error("Datas are not valid");
     const notifyServerErorr = () => toast.error("Internal Server Erorr");
     const notifyFirstLogin = () => toast.warning("Please Login First");

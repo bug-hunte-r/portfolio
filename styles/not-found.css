@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+.container-404{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.title-404{
+    color: white;
+    font-size: calc(10px + 5vw);
+    text-align: center;
+}
+
+.btn-404{
+    text-decoration: none;
+    color: white;
+    font-family: Neo;
+    font-size: calc(1px + 2vw);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-404:hover {
+    color: black;
+    background-color: white;
+}
