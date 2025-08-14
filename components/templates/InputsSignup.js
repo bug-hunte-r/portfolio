@@ -60,7 +60,7 @@ function InputsSignup() {
 
             <input placeholder='Email' type='text' className='inputs-Signup' value={email} onChange={event => setEmail(event.target.value)} />
 
-            <input placeholder='Password' type='text' className='inputs-Signup' value={password} onChange={event => setPassword(event.target.value)} />
+            <input placeholder='Password' type='password' className='inputs-Signup' value={password} onChange={event => setPassword(event.target.value)} />
 
             <button className='btn-Signup' onClick={signupHandler}>Signup</button>
             <p className='text-Signup'>Already have an account? <Link href={'/login'} className='link-Signup'>Login</Link></p>

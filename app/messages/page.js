@@ -13,7 +13,7 @@ async function page() {
 
     const user = await getUser()
 
-    if (user.role !== 'ADMIN' || !user) {
+    if (user?.role !== 'ADMIN' || !user) {
         redirect('/')
     }
 

@@ -58,7 +58,7 @@ async function Contact() {
             rootMargin="-100px"
             textAlign="center"
           />
-          {user.role === 'ADMIN' && (
+          {user?.role === 'ADMIN' && (
             <Link className='link-messages' href={'/messages'}>Messages <FaArrowRightLong /></Link>
           )}
         </div>
