@@ -10,7 +10,7 @@ function InputsSignup() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const notifyNotValid = () => toast.warning("Datas are not valid");
+    const notifyNotValid = () => toast.error("Datas are not valid");
     const notifyDataExist = () => toast.error("This username or email is already exist");
     const notifySignUped = () => toast.success("You are Signuped Successfully");
     const notifyServerErorr = () => toast.error("Internal Server Erorr!");
