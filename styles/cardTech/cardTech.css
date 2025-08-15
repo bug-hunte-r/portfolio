@@ -24,15 +24,7 @@
 .title-card-skill {
     color: white;
     font-family: Neo;
-    font-weight: 500;
-}
-
-.html {
-    color: orangered;
-}
-
-.css {
-    color: #264de4;
+    font-weight: 300;
 }
 
 .js {
@@ -60,5 +52,13 @@
 }
 
 .ex {
-    color: 	#0075C9;
+    color: #0075C9;
+}
+
+.type{
+    color: #3178C6;
+}
+
+.nest{
+    color: #E0234E;
 }
