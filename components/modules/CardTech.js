@@ -7,6 +7,9 @@ import { FaJsSquare } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
 import FadeContent from '@/anim/FadeContent';
 
 function CardTech() {
@@ -52,6 +55,24 @@ function CardTech() {
                 <div className='container-cards'>
                     <SiNextdotjs className='img-card-skill next' size={70} />
                     <h2 className='title-card-skill'>NEXT</h2>
+                </div>
+            </FadeContent>
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                <div className='container-cards'>
+                    <SiMongodb className='img-card-skill mongo' size={70} />
+                    <h2 className='title-card-skill'>MongoDB</h2>
+                </div>
+            </FadeContent>
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                <div className='container-cards'>
+                    <DiNodejs className='img-card-skill node' size={70} />
+                    <h2 className='title-card-skill'>Node</h2>
+                </div>
+            </FadeContent>
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                <div className='container-cards'>
+                    <SiExpress className='img-card-skill ex' size={70} />
+                    <h2 className='title-card-skill'>Express</h2>
                 </div>
             </FadeContent>
         </>

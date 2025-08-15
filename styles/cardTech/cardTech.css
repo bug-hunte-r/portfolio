@@ -1,4 +1,4 @@
-.container-cards{
+.container-cards {
     width: 100%;
     background-color: #6F61C0;
     display: flex;
@@ -11,42 +11,54 @@
     cursor: pointer;
 }
 
-.container-cards:hover{
+.container-cards:hover {
     transform: translateY(-10px);
 }
 
-.img-card-skill{
+.img-card-skill {
     border-radius: 200px;
     background-color: white;
     padding: 5px;
 }
 
-.title-card-skill{
+.title-card-skill {
     color: white;
     font-family: Neo;
     font-weight: 500;
 }
 
-.html{
+.html {
     color: orangered;
 }
 
-.css{
+.css {
     color: #264de4;
 }
 
-.js{
+.js {
     color: #f7df1e;
 }
 
-.react{
+.react {
     color: #61dafb;
 }
 
-.next{
+.next {
     color: black;
 }
 
-.tailwind{
+.tailwind {
     color: #38bdf8;
+}
+
+.mongo {
+    color: #47A248;
+}
+
+.node {
+    color: #68A063;
+}
+
+.ex {
+    color: 	#0075C9;
 }
