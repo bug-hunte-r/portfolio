@@ -114,6 +114,10 @@ html {
     width: 0;
 }
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .phone-number {
     color: white;
     font-family: Neo;

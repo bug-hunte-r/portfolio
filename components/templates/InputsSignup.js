@@ -55,6 +55,7 @@ function InputsSignup() {
 
     return (
         <div className='form-Signup'>
+            <Link href={'/'} className='btn-go-home-signup'>Home</Link>
             <h1 className='title-Signup'>Signup</h1>
             <input placeholder='Username' type='text' className='inputs-Signup' value={username} onChange={event => setUsername(event.target.value)} />
 

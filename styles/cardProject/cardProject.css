@@ -6,6 +6,10 @@
     cursor: pointer;
 }
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .img-project{
     width: 100%;
     border-radius: 10px;

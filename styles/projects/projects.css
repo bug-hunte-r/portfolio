@@ -11,6 +11,10 @@ html {
     row-gap: 60px;
 }
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .title-projects{
     color: white;
     font-family: Neo;

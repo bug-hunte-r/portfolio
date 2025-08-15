@@ -75,3 +75,20 @@ body{
     color: gray;
     text-decoration: none;
 }
+
+.btn-go-home-signup{
+    color: white;
+    font-family: Neo;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    font-size: calc(10px + 1vw);
+}
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}

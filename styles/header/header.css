@@ -75,6 +75,10 @@
     cursor: pointer;
 }
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .btn-hire:hover {
     transform: translateY(-5px);
 }

@@ -57,6 +57,7 @@ function FormLogin() {
 
     return (
         <div className='form-login'>
+            <Link href={'/'} className='btn-go-home-login'>Home</Link>
             <h1 className='title-login'>Login</h1>
 
             <input placeholder='Username or Email' type='text' className='inputs-login' value={identifier} onChange={event => setIdentifier(event.target.value)} />

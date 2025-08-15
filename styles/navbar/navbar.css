@@ -19,6 +19,10 @@
     align-items: center;
 }
 
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .nav-links {
     font-size: calc(7px + 1vw);
     font-family: Neo;
