@@ -3,7 +3,7 @@ import cardTech from '../../styles/cardTech/cardTech.css'
 import media from '../../styles/cardTech/mediaCardTech.css'
 import { IoLogoJavascript } from "react-icons/io";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiNextdotjs } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
@@ -38,7 +38,7 @@ function CardTech() {
 
             <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                 <div className='container-cards'>
-                    <SiNextdotjs className='img-card-skill next' size={70} />
+                    <TbBrandNextjs className='img-card-skill next' size={70} />
                     <h2 className='title-card-skill'>NEXT</h2>
                 </div>
             </FadeContent>
