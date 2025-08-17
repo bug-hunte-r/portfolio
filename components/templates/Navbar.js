@@ -12,11 +12,10 @@ function Navbar({ user }) {
     const notifyLogOut = () => toast.success("You are logged out successfully");
     const notifyServerErorr = () => toast.error("Internal Server Error");
 
-
     const logoutHandler = async () => {
 
         const res = await fetch('/api/auth/logout')
-        const data = await res.json()
+        await res.json()
 
         if (res.status === 200) {
             notifyLogOut()

@@ -30,7 +30,7 @@ function InputsSignup() {
             },
             body: JSON.stringify(userMap)
         })
-        const data = await res.json()
+        await res.json()
 
         if (res.status === 201) {
             setUsername('')

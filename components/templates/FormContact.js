@@ -29,7 +29,7 @@ function FormContact({ user, username }) {
                 },
                 body: JSON.stringify(messageMap)
             })
-            const data = await res.json()
+            await res.json()
 
             if (res.status === 400) {
                 notifyDataNotValid()

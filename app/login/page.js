@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import login from '../../styles/login/login.css'
 import media from '../../styles/login/mediaLogin.css'
 import Silk from '@/anim/Silk'
