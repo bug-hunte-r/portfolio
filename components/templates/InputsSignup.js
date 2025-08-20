@@ -23,7 +23,7 @@ function InputsSignup() {
             password
         }
 
-        const res = await fetch('/api/auth/signup', {
+        const res = await fetch('https://shayanjafarnejad.vercel.app/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

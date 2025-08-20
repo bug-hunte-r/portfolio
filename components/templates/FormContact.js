@@ -22,7 +22,7 @@ function FormContact({ user, username }) {
                 message
             }
 
-            const res = await fetch('/api/message', {
+            const res = await fetch('https://shayanjafarnejad.vercel.app/api/message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
