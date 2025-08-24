@@ -35,10 +35,3 @@
 .nav-links:hover {
     transform: translateY(-5px);
 }
-
-.icon-user{
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    margin-top: -10px;
-}

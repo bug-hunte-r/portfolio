@@ -1,4 +1,3 @@
-import { connect } from 'mongoose';
 import localFont from 'next/font/local'
 
 const Neo = localFont({

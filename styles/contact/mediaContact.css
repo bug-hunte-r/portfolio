@@ -19,9 +19,11 @@
     .icons-socials {
         font-size: 50px;
     }
+}
 
-    .area {
-        padding-bottom: 150px;
+@media only screen and (min-width: 2000px) {
+    .area{
+        height: 200px;
     }
 }
 
@@ -32,10 +34,6 @@
 
     .inputs-contact {
         padding: 18px 20px;
-    }
-
-    .area {
-        padding-bottom: 70px;
     }
 }
 
@@ -48,10 +46,6 @@
 @media only screen and (max-width: 770px) {
     .inputs-contact {
         padding: 16px 20px;
-    }
-
-    .area {
-        padding-bottom: 70px;
     }
 }
 
@@ -89,11 +83,6 @@
     .phone-number {
         display: none;
     }
-
-    .area {
-        padding-bottom: 70px;
-    }
-
 }
 
 @media only screen and (max-width: 480px) {

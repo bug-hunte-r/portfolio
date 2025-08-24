@@ -3,28 +3,8 @@ import navbar from '../../styles/navbar/navbar.css'
 import mediaNavbar from '../../styles/navbar/mediaNavbar.css'
 import Link from 'next/link'
 import SplitText from './../../anim/SplitText'
-import { CiUser } from "react-icons/ci";
-import { FiLogOut } from "react-icons/fi";
-import { ToastContainer, toast } from 'react-toastify';
 
-function Navbar({ user }) {
-
-    const notifyLogOut = () => toast.success("You are logged out successfully");
-    const notifyServerErorr = () => toast.error("Internal Server Error");
-
-    const logoutHandler = async () => {
-
-        const res = await fetch('/api/auth/logout')
-        await res.json()
-
-        if (res.status === 200) {
-            notifyLogOut()
-            location.reload()
-        }
-        if (res.status === 500) {
-            notifyServerErorr()
-        }
-    }
+function Navbar() {
 
     return (
         <div className='container'>
@@ -123,24 +103,7 @@ function Navbar({ user }) {
                     />
                 </Link>
 
-                {!user ? (
-                    <Link href={'/signup'}><CiUser className='icon-user' /></Link>
-                ) : (
-                    <Link href={'/'}><FiLogOut className='icon-user' onClick={logoutHandler} /></Link>
-                )}
-
             </div>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="dark"
-            />
         </div>
     )
 }

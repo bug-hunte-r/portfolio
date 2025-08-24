@@ -48,7 +48,7 @@ function Header() {
             <button className='btn-hire'><a href={'/#contact'} className='a1'>Hire me</a></button>
           </FadeContent>
           <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0}>
-            <button className='btn-get-resume'><a href={'Shayan Jafarnejad.pdf'} download className='a2' onClick={notifyDownload}>Get resume</a></button>
+            <button className='btn-get-resume'><a href={'Shayan Jafarnejad (EN).pdf'} download className='a2' onClick={notifyDownload}>Get resume</a></button>
           </FadeContent>
         </div>
 
