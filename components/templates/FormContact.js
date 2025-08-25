@@ -8,7 +8,7 @@ function FormContact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const notifyMessageSend = () => toast.success("Message Sended Successfully");
+    const notifyMessageSend = () => toast.success("Message Sent Successfully");
     const notifyMessageError = () => toast.error("Failed to send message");
 
     const sendMessageHandler = async () => {
